@@ -11,7 +11,7 @@ class UserGroup(models.Model):
 class User(models.Model):
     username = models.CharField(max_length=30)
     created = models.DateTimeField(default=datetime.now)
-    group = models.ForeignKey(UserGroup, on_delete=models.CASCADE, null=True, blank=True)
+    group = models.ManyToManyField(UserGroup)
     
     def __str__(self):
         return f'{self.username}'

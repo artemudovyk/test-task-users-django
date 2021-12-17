@@ -16,3 +16,14 @@ def list_users(request):
     }
     
     return Response(content)
+
+
+@api_view(["GET"])
+def list_user_groups(request):
+    user_groups = UserGroup.objects.all()
+    serializer = UserGroupSerializer(user_groups, many=True)
+    content = {
+        "user_groups": serializer.data,
+    }
+    
+    return Response(content)
