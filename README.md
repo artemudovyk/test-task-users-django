@@ -1,4 +1,4 @@
-# test-task-users-django
+# users-app-django-react
 
 Create a simple website with two pages:
 1) List of Users
@@ -30,9 +30,9 @@ You have one week to perform this task. In case of any questions please let me k
 
 todo:
 - django
--- моделі✅
--- серіалізація✅
--- апі✅
+-- ✅моделі
+-- ✅серіалізація
+-- ✅апі
 -- підключити postgres?
 -- чи треба в allowedhosts вказувати локалхост?
 -- демо дані
@@ -54,3 +54,7 @@ todo:
 - docker
 -- докерізація дженго+реакт https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
 -- протестувати на віртуалці?
+
+
+Питання:
+- ✅як вірніше організувати gitignore, якщо я додаю django та react в директоріях в рамках одного репозиторія? = Додав в свої директорії .гітігнор, вілповідно як вони й були згенеровані
