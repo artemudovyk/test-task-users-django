@@ -1,0 +1,35 @@
+version: "0.1.0"
+services:
+  project:
+    restart: always
+    container_name: code
+    command : bash -c "python manage.py migrate &&
+                      python manage.py runserver 0.0.0.0:8000"
+    # env_file:
+    #   - ./project/settings.ini
+    build:
+      context: ./django/
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - app-net
+
+  frontend:
+    restart: always
+    command : npm start
+    container_name: front
+    build:
+      context: ./react-app/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    depends_on:
+      - project
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge
