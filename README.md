@@ -1,5 +1,17 @@
 # users-app-django-react
 
+How to run app (with docker):
+git clone https://github.com/artemudovyk/users-app-django-react
+cd users-app-django-react
+docker-compose build
+docker-compose up -d
+Visit http://localhost:3000/
+
+To shutdown:
+docker-compose down
+
+
+Task:
 Create a simple website with two pages:
 1) List of Users
 2) List of Groups for Users
@@ -33,7 +45,6 @@ django
 - ✅моделі
 - ✅серіалізація
 - ✅апі
-- підключити postgres?
 - чи треба в allowedhosts вказувати локалхост?
 - демо дані
 - ✅зробити так, щоб видалити групу, де є принаймні 1 юзер, неможливо - реалізовано через on_delete=models.PROTECT
@@ -47,15 +58,14 @@ react
     - ✅додати форму для створення нового юзера
     - ✅додати кнопку для редагування юзера
     - ✅додати кнопку для видалення юзера
-- сторінка зі списком груп
-    - вивести список груп з апі
-    - додати форму для створення нової групи
-    - додати кнопку для видалення групи
+- ✅сторінка зі списком груп
+    - ✅вивести список груп з апі
+    - ✅додати форму для створення нової групи
+    - ✅додати кнопку для видалення групи
 
 
 docker
-- докерізація дженго+реакт https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
-- протестувати на віртуалці?
+- ✅докерізація дженго+реакт https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
 
 
 Інше:
