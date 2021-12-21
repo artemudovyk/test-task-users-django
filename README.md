@@ -15,6 +15,10 @@ To shutdown:
 docker-compose down
 ```
 
+Preview:
+![image](https://user-images.githubusercontent.com/58283675/147012144-40b347e5-65df-4d35-a118-44b480ba9e8c.png)
+![image](https://user-images.githubusercontent.com/58283675/147012171-6e9cc89b-23ac-4428-8e43-a196d7a9f759.png)
+
 
 Task:
 Create a simple website with two pages:
