@@ -1,7 +1,7 @@
 // import UsersListComponent from "../components/UsersListComponent";
 import { userGroupDetailUrl, userGroupsListUrl } from '../api';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ReadOnlyGroupRow from '../components/groups/ReadOnlyGroupRow';
 import EditableGroupRow from '../components/groups/EditableGroupRow';
 import AddNewGroupForm from '../components/groups/AddNewGroupForm';
@@ -20,16 +20,6 @@ function UserGroupsPage({ groups, setGroups, users }) {
 		name: '',
 		description: '',
 	});
-
-	// Load data from API
-	// useEffect(() => {
-	// 	// Retrieve all groups from API
-	// 	async function getGroups() {
-	// 		const response = await axios.get(userGroupsListUrl());
-	// 		setGroups(response.data);
-	// 	}
-	// 	getGroups();
-	// }, []);
 
 	// =================
 	// === API calls ===
