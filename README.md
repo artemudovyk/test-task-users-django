@@ -18,6 +18,8 @@ docker-compose down
 Preview:
 ![image](https://user-images.githubusercontent.com/58283675/147012144-40b347e5-65df-4d35-a118-44b480ba9e8c.png)
 ![image](https://user-images.githubusercontent.com/58283675/147012171-6e9cc89b-23ac-4428-8e43-a196d7a9f759.png)
+![image](https://user-images.githubusercontent.com/58283675/147012263-e69e671a-0a72-44a5-b5b9-4330bb11214d.png)
+
 
 
 Task:
