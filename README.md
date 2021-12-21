@@ -1,14 +1,19 @@
 # users-app-django-react
 
 How to run app (with docker):
+```
 git clone https://github.com/artemudovyk/users-app-django-react
 cd users-app-django-react
 docker-compose build
 docker-compose up -d
-Visit http://localhost:3000/
+```
+And then visit http://localhost:3000/
+
 
 To shutdown:
+```
 docker-compose down
+```
 
 
 Task:
